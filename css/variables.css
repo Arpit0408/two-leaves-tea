@@ -1,0 +1,16 @@
+:root {
+  --color-primary-dark: #2a2857;  
+  --color-bg-cream: #fcf9f4;     
+  --color-bg-pure: #ffffff;
+  --color-accent-gold: #c89c5e;  
+  --color-text-dark: #2a2a2a;     
+  --color-text-muted: #666666;
+  --color-border: #e3dec3;        
+
+  --font-serif: 'Playfair Display', Georgia, serif;
+  --font-sans: 'Inter', system-ui, sans-serif;
+  --font-mono: 'Roboto Mono', monospace;
+
+  --transition-smooth: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  --transition-bounce: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
