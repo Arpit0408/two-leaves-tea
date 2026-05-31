@@ -28,3 +28,27 @@ var bestsellerSwiper = new Swiper(".bestsellerSwiper", {
     },
   },
 });
+
+var testimonialsSwiper = new Swiper(".testimonialsSwiper", {
+  slidesPerView: 1.1,
+  spaceBetween: 20,
+  loop: true,
+  pagination: {
+    el: ".testimonials-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".testimonials-next",
+    prevEl: ".testimonials-prev",
+  },
+  breakpoints: {
+    768: {
+      slidesPerView: 2.2,
+      spaceBetween: 24,
+    },
+    1024: {
+      slidesPerView: 5,
+      spaceBetween: 32,
+    },
+  },
+});
