@@ -16,6 +16,7 @@ body {
   justify-content: center;
   flex-direction: column;
   font-family: var(--font-serif);
+  background-color: #fbf9eb;
 }
 
 .Bestseller-title {
