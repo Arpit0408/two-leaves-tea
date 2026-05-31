@@ -1,102 +1,609 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Two Leaves and a Bud</title>
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-  <link rel="stylesheet" href="css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Two Leaves and a Bud</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Roboto+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="css/style.css" />
   </head>
-<body>
+  <body>
     <!-- Top Header -->
     <div class="topHeader">
-        <p class="announcement-text">
-       Free US shipping for orders over $75
-    </p> 
+      <p class="announcement-text">Free US shipping for orders over $75</p>
     </div>
 
     <!-- Header -->
     <div class="header-wrapper">
-         <div class="header">
+      <div class="header">
         <div class="left">
-            <ul class="header-menu__items">
-  
-  <li class="header-menu__item with-dropdown">
-    <a class="header-menu-left  " href="#shop-mega-menu" aria-label="Shop" title="Shop">
-      <span class="label">Shop</span>
-      <span class=" header-menu__left-icon">
-        <i class="fa-solid fa-chevron-down"></i> 
-      </span>
-    </a>
-  </li>
-  
-  <li class="header-menu__item with-dropdown">
-    <a class="header-menu-left" href="#learn-mega-menu" aria-label="Learn" title="Learn">
-      <span class="label">Learn</span>
-      <span class=" header-menu__left-icon">
-        <i class="fa-solid fa-chevron-down"></i> 
-      </span>
-    </a>
-  </li>
-  
-  <!-- 3. Reviews -->
-  <li class="header-menu__item">
-    <a class="header-menu-left" href="/pages/reviews" aria-label="Reviews" title="Reviews">
-      <span class="label">Reviews</span>
-      <span class="review-icon">
-        <i class="fa-solid fa-star" style="color: #ffb500;"></i>
-      </span>
-    </a>
-  </li>
+          <ul class="header-menu__items">
+            <li class="header-menu__item with-dropdown">
+              <a
+                class="header-menu-left"
+                href="#shop-mega-menu"
+                aria-label="Shop"
+                title="Shop"
+              >
+                <span class="label">Shop</span>
+                <span class="header-menu__left-icon">
+                  <i class="fa-solid fa-chevron-down"></i>
+                </span>
+              </a>
+            </li>
 
-</ul>
+            <li class="header-menu__item with-dropdown">
+              <a
+                class="header-menu-left"
+                href="#learn-mega-menu"
+                aria-label="Learn"
+                title="Learn"
+              >
+                <span class="label">Learn</span>
+                <span class="header-menu__left-icon">
+                  <i class="fa-solid fa-chevron-down"></i>
+                </span>
+              </a>
+            </li>
 
+            <!-- 3. Reviews -->
+            <li class="header-menu__item">
+              <a
+                class="header-menu-left"
+                href="/pages/reviews"
+                aria-label="Reviews"
+                title="Reviews"
+              >
+                <span class="label">Reviews</span>
+                <span class="review-icon">
+                  <i class="fa-solid fa-star" style="color: #ffb500"></i>
+                </span>
+              </a>
+            </li>
+          </ul>
         </div>
+        <i class="fa-solid fa-bars menu-icon"></i>
         <div class="logo">
-            <img src="./assets/Twoleaves_logo.svg" alt="twoleavestea">
+          <img src="./assets/Twoleaves_logo.svg" alt="twoleavestea" />
         </div>
 
+        <div class="right">
+          <ul class="header-menu__items">
+            <li class="header-menu__item">
+              <a
+                class="header-menu__right custom-font-name-3"
+                href="/account"
+                aria-label="My Account"
+                title="My Account"
+              >
+                <span class="label">My Account</span>
+              </a>
+            </li>
 
-       <div class="right">
-        <ul class="header-menu__items">
-            
             <li class="header-menu__item">
-                <a class=" header-menu__right custom-font-name-3" href="/account" aria-label="My Account" title="My Account">
-                    <span class="label">My Account</span>
-                </a>
+              <a
+                class="header-menu__right custom-font-name-3"
+                href="/pages/cafe-and-wholesale-partners"
+                aria-label="Cafe & Wholesale Partners"
+                title="Cafe & Wholesale Partners"
+              >
+                <span class="label">Cafe & Wholesale Partners</span>
+              </a>
             </li>
-            
-            <li class="header-menu__item">
-                <a class=" header-menu__right custom-font-name-3" href="/pages/cafe-and-wholesale-partners" aria-label="Cafe & Wholesale Partners" title="Cafe & Wholesale Partners">
-                    <span class="label">Cafe & Wholesale Partners</span>
-                </a>
-            </li>
-            
-            <li class="header-menu__item">
-                <a class=" header-menu__right custom-font-name-3" href="/blogs/twoleaves" aria-label="Tea Journal" title="Tea Journal">
-                    <span class="label">Tea Journal</span>
-                </a>
-            </li>
-            
-        </ul>
 
-    <div class="header__cart" role="button">
-        <div class="header__cart-inner">
-            <div class="cart__icon">
-                <i class="fa-solid fa-bag-shopping"></i> 
-            </div>
-            <div class="cart__number">
+            <li class="header-menu__item">
+              <a
+                class="header-menu__right custom-font-name-3"
+                href="/blogs/twoleaves"
+                aria-label="Tea Journal"
+                title="Tea Journal"
+              >
+                <span class="label">Tea Journal</span>
+              </a>
+            </li>
+          </ul>
+
+          <div class="header__cart" role="button">
+            <div class="header__cart-inner">
+              <div class="cart__icon">
+                <i class="fa-solid fa-bag-shopping"></i>
+              </div>
+              <div class="cart__number">
                 <span class="cart__count">0</span>
+              </div>
             </div>
+          </div>
         </div>
+
+        <div class="mobile-nav-drawer">
+          <ul class="mobile-menu__items">
+            <li class="header-menu__item with-dropdown">
+              <a
+                class="header-menu-left"
+                href="#shop-mega-menu"
+                aria-label="Shop"
+                title="Shop"
+              >
+                <span class="label">Shop</span>
+                <span class="header-menu__left-icon">
+                  <i class="fa-solid fa-chevron-down"></i>
+                </span>
+              </a>
+            </li>
+
+            <li class="header-menu__item with-dropdown">
+              <a
+                class="header-menu-left"
+                href="#learn-mega-menu"
+                aria-label="Learn"
+                title="Learn"
+              >
+                <span class="label">Learn</span>
+                <span class="header-menu__left-icon">
+                  <i class="fa-solid fa-chevron-down"></i>
+                </span>
+              </a>
+            </li>
+
+            <!-- 3. Reviews -->
+            <li class="header-menu__item">
+              <a
+                class="header-menu-left"
+                href="/pages/reviews"
+                aria-label="Reviews"
+                title="Reviews"
+              >
+                <span class="label">Reviews</span>
+                <span class="review-icon">
+                  <i class="fa-solid fa-star" style="color: #ffb500"></i>
+                </span>
+              </a>
+            </li>
+
+            <li class="header-menu__item">
+              <a
+                class="mobile-menu__right custom-font-name-3"
+                href="/account"
+                aria-label="My Account"
+                title="My Account"
+              >
+                <span class="label">My Account</span>
+              </a>
+            </li>
+
+            <li class="header-menu__item">
+              <a
+                class="mobile-menu__right custom-font-name-3"
+                href="/pages/cafe-and-wholesale-partners"
+                aria-label="Cafe & Wholesale Partners"
+                title="Cafe & Wholesale Partners"
+              >
+                <span class="label">Cafe & Wholesale Partners</span>
+              </a>
+            </li>
+
+            <li class="header-menu__item">
+              <a
+                class="mobile-menu__right custom-font-name-3"
+                href="/blogs/twoleaves"
+                aria-label="Tea Journal"
+                title="Tea Journal"
+              >
+                <span class="label">Tea Journal</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="cross-btn">
+          <i class="fa-solid fa-xmark close-icon"></i>
+        </div>
+      </div>
     </div>
 
-</div>
+    <!-- Hero Section -->
+    <div class="swiper mySwiper hero">
+      <!-- index.html ke swiper-wrapper ke andar slides -->
+      <div class="swiper-wrapper">
+        <!--  SLIDE 1: Alpine Berry -->
+        <div class="swiper-slide">
+          <picture class="slide-picture">
+            <!-- Desktop Image  -->
+            <source
+              media="(min-width: 769px)"
+              srcset="assets/AlpineBerry.webp"
+            />
+            <!-- Mobile Image  -->
+            <img src="assets/AlpineBerry_mobile.webp" alt="Alpine Berry Tea" />
+          </picture>
 
-     </div>
+          <div class="slide-content">
+            <h2 class="slide-title">A cup that fits the moment.</h2>
+            <p class="slide-desc">
+              From compostable whole leaf tea sachets and iced tea to tea lattes
+              and matcha, we've got something for everyone.
+            </p>
+            <a href="#shop" class="btn-shop">Shop Now</a>
+          </div>
+        </div>
+
+        <!--  SLIDE 2: Matcha -->
+        <div class="swiper-slide">
+          <picture class="slide-picture">
+            <!-- Desktop Image  -->
+            <source
+              media="(min-width: 769px)"
+              srcset="assets/matcha_desktop.webp"
+            />
+            <!-- Mobile Image (Default) -->
+            <img src="assets/matcha_mobile.webp" alt="Matcha Tea" />
+          </picture>
+
+          <div class="slide-content">
+            <h2 class="slide-title" style="color: black">Meet Your Matcha</h2>
+            <p class="slide-desc" style="color: black">
+              Stone-ground organic green tea leaves sourced directly from Japan,
+              perfect for focused energy and calm.
+            </p>
+            <a href="#shop-matcha" class="btn-shop">Shop Now</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
     </div>
-</body>
+
+    <!-- BestSeller Section -->
+    <div class="Bestseller">
+      <h4 class="Bestseller-title">
+        A <span style="font-style: italic">great</span> cup starts with a
+        careful <br />
+        pluck - the top two leaves and a bud.
+      </h4>
+
+      <div class="headingbtnstyle" style="background-color: #daaeea">
+        Best Sellers
+      </div>
+
+      <!--  Bestseller -->
+      <div class="Bestseller-slider-wrapper">
+        <div class="swiper bestsellerSwiper">
+          <div class="swiper-wrapper">
+            <!-- Slide 1: Organic Tropical Green Tea -->
+            <div class="swiper-slide product-slide">
+              <div class="product-card">
+                <div
+                  class="product-img-wrapper"
+                  style="background-color: #c1ee91"
+                >
+                  <div class="card-header-row">
+                    <span class="product-badge">Tea Sachets</span>
+                    <span class="product-rating"
+                      ><i class="fa-solid fa-star"></i> 4.71 (84)</span
+                    >
+                  </div>
+                  <img
+                    class="product-img"
+                    src="./assets/organic_tropical_green_tea_sachet_featured.webp"
+                    alt="Organic Tropical Green Tea"
+                  />
+                  <button class="btn-add">
+                    <span class="add-plus">+</span>
+                    <span class="add-text">Add</span>
+                  </button>
+                </div>
+                <div class="product-info">
+                  <h3 class="product-title">Organic Tropical Green Tea</h3>
+                  <span class="product-price">From $11.95</span>
+                  <p class="product-desc">
+                    Our Organic Tropical Green is a fruity and fun take on a
+                    classic green tea.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 2: Herbal Tea Trio -->
+            <div class="swiper-slide product-slide">
+              <div class="product-card">
+                <div
+                  class="product-img-wrapper"
+                  style="background-color: #ffd884"
+                >
+                  <div class="card-header-row">
+                    <span class="product-badge">Gifts & Samplers</span>
+                    <span class="product-rating"
+                      ><i class="fa-solid fa-star"></i> 5 (2)</span
+                    >
+                  </div>
+                  <img
+                    class="product-img"
+                    src="./assets/bundle-herbal-tea-trio-featured-image.webp"
+                    alt="Herbal Tea Trio"
+                  />
+                  <button class="btn-add">
+                    <span class="add-plus">+</span>
+                    <span class="add-text">Add</span>
+                  </button>
+                </div>
+                <div class="product-info">
+                  <h3 class="product-title">Herbal Tea Trio</h3>
+                  <span class="product-price">$33.30</span>
+                  <p class="product-desc">A trio of soothing herbal teas.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 3: Organic Peppermint -->
+            <div class="swiper-slide product-slide">
+              <div class="product-card">
+                <div
+                  class="product-img-wrapper"
+                  style="background-color: #b0e8c1"
+                >
+                  <div class="card-header-row">
+                    <span class="product-badge">Naked Sachets</span>
+                    <span class="product-rating"
+                      ><i class="fa-solid fa-star"></i> 5 (11)</span
+                    >
+                  </div>
+                  <img
+                    class="product-img"
+                    src="./assets/peppermint_naked_featured.webp"
+                    alt="Organic Peppermint"
+                  />
+                  <button class="btn-add">
+                    <span class="add-plus">+</span>
+                    <span class="add-text">Add</span>
+                  </button>
+                </div>
+                <div class="product-info">
+                  <h3 class="product-title">
+                    Organic Peppermint - 50 Naked Tea Sachets
+                  </h3>
+                  <span class="product-price">$21.95</span>
+                  <p class="product-desc">
+                    Our organic Peppermint tea is made from peppermint grown in
+                    Washington State.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 4: Classic Bamboo Tea Chest -->
+            <div class="swiper-slide product-slide">
+              <div class="product-card">
+                <div
+                  class="product-img-wrapper"
+                  style="background-color: #c1e4f8"
+                >
+                  <div class="card-header-row">
+                    <span class="product-badge">Gifts & Samplers</span>
+                    <span class="product-rating"
+                      ><i class="fa-solid fa-star"></i> 4.85 (41)</span
+                    >
+                  </div>
+                  <img
+                    class="product-img"
+                    src="./assets/Bamboo_Tea_Chest.webp"
+                    alt="Classic Bamboo Tea Chest"
+                  />
+                  <button class="btn-add">
+                    <span class="add-plus">+</span>
+                    <span class="add-text">Add</span>
+                  </button>
+                </div>
+                <div class="product-info">
+                  <h3 class="product-title">Classic Bamboo Tea Chest</h3>
+                  <span class="product-price">$42.95</span>
+                  <p class="product-desc">
+                    This 6-slot bamboo box offers a sampling of eight sachets
+                    each of six of our best selling teas.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 5: Nice Matcha Tea Latte Mix -->
+            <div class="swiper-slide product-slide">
+              <div class="product-card">
+                <div
+                  class="product-img-wrapper"
+                  style="background-color: #c0e571"
+                >
+                  <div class="card-header-row">
+                    <span class="product-badge">Latte Mix</span>
+                    <span class="product-rating"
+                      ><i class="fa-solid fa-star"></i> 4.3 (23)</span
+                    >
+                  </div>
+                  <img
+                    class="product-img"
+                    src="./assets/Latte_Mix_matcha.webp"
+                    alt="Nice Matcha Tea Latte Mix"
+                  />
+                  <button class="btn-add">
+                    <span class="add-plus">+</span>
+                    <span class="add-text">Add</span>
+                  </button>
+                </div>
+                <div class="product-info">
+                  <h3 class="product-title">Nice Matcha Tea Latte Mix</h3>
+                  <span class="product-price">From $12.95</span>
+                  <p class="product-desc">
+                    Our Nice Matcha is a lightly sweetened powdered mix meant
+                    for making tea lattes simple.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 6: Nice Chai Tea Latte Mix -->
+            <div class="swiper-slide product-slide">
+              <div class="product-card">
+                <div
+                  class="product-img-wrapper"
+                  style="background-color: #ffcb96"
+                >
+                  <div class="card-header-row">
+                    <span class="product-badge">Latte Mix</span>
+                    <span class="product-rating"
+                      ><i class="fa-solid fa-star"></i> 4.24 (17)</span
+                    >
+                  </div>
+                  <img
+                    class="product-img"
+                    src="./assets/Latte_Mix_chai.webp"
+                    alt="Nice Chai Tea Latte Mix"
+                  />
+                  <button class="btn-add">
+                    <span class="add-plus">+</span>
+                    <span class="add-text">Add</span>
+                  </button>
+                </div>
+                <div class="product-info">
+                  <h3 class="product-title">Nice Chai Tea Latte Mix</h3>
+                  <span class="product-price">From $12.95</span>
+                  <p class="product-desc">
+                    Our Nice Chai is a not too sweet, not too spicy, powdered
+                    latte mix meant for making tea lattes simple.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 7: Organic Mountain High Chai Tea -->
+            <div class="swiper-slide product-slide">
+              <div class="product-card">
+                <div
+                  class="product-img-wrapper"
+                  style="background-color: #ffd1b8"
+                >
+                  <div class="card-header-row">
+                    <span class="product-badge">Tea Sachets</span>
+                    <span class="product-rating"
+                      ><i class="fa-solid fa-star"></i> 4.79 (108)</span
+                    >
+                  </div>
+                  <img
+                    class="product-img"
+                    src="./assets/organic_high_mountain_chai_tea_sachet_featured.webp"
+                    alt="Organic Mountain High Chai Tea"
+                  />
+                  <button class="btn-add">
+                    <span class="add-plus">+</span>
+                    <span class="add-text">Add</span>
+                  </button>
+                </div>
+                <div class="product-info">
+                  <h3 class="product-title">Organic Mountain High Chai Tea</h3>
+                  <span class="product-price">From $11.95</span>
+                  <p class="product-desc">
+                    An ode to our Rocky Mountain roots, our organic Mountain
+                    High Chai takes your tastebuds down a spice-filled ski
+                    slope.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 8: Organic Earl Grey -->
+            <div class="swiper-slide product-slide">
+              <div class="product-card">
+                <div
+                  class="product-img-wrapper"
+                  style="background-color: #cce3ff"
+                >
+                  <div class="card-header-row">
+                    <span class="product-badge">Naked Sachets</span>
+                    <span class="product-rating"
+                      ><i class="fa-solid fa-star"></i> 4.56 (41)</span
+                    >
+                  </div>
+                  <img
+                    class="product-img"
+                    src="./assets/Naked_Tea_earlgrey.webp"
+                    alt="Organic Earl Grey"
+                  />
+                  <button class="btn-add">
+                    <span class="add-plus">+</span>
+                    <span class="add-text">Add</span>
+                  </button>
+                </div>
+                <div class="product-info">
+                  <h3 class="product-title">
+                    Organic Earl Grey - 50 Naked Tea Sachets
+                  </h3>
+                  <span class="product-price">$21.95</span>
+                  <p class="product-desc">
+                    Earl Grey's distinctive aroma comes from bergamot - a citrus
+                    fruit about the size of an orange but yellow-green.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 9: Alpine Berry -->
+            <div class="swiper-slide product-slide">
+              <div class="product-card">
+                <div
+                  class="product-img-wrapper"
+                  style="background-color: #aee0f9"
+                >
+                  <div class="card-header-row">
+                    <span class="product-badge">Naked Sachets</span>
+                    <span class="product-rating"
+                      ><i class="fa-solid fa-star"></i> 5 (5)</span
+                    >
+                  </div>
+                  <img
+                    class="product-img"
+                    src="./assets/alpine_berry_naked_featured.webp"
+                    alt="Alpine Berry"
+                  />
+                  <button class="btn-add">
+                    <span class="add-plus">+</span>
+                    <span class="add-text">Add</span>
+                  </button>
+                </div>
+                <div class="product-info">
+                  <h3 class="product-title">
+                    Alpine Berry - 15 Naked Tea Sachets
+                  </h3>
+                  <span class="product-price">From $8.95</span>
+                  <p class="product-desc">
+                    Our signature herbal blend, Alpine Berry is a caffeine-free,
+                    naturally sweet and tart tea.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slider Navigation -->
+          <div class="swiper-button-next bestseller-next"></div>
+          <div class="swiper-button-prev bestseller-prev"></div>
+        </div>
+        <a href="#shop" class="btn-shop">Explore All Teas</a>
+      </div>
+    </div>
+  </body>
+  <script src="script/header.js"></script>
+  <script src="script/swiper.js"></script>
 </html>
